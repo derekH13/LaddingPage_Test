@@ -6,11 +6,11 @@ export const StyleHero = styled.section`
   background-image: url('src/assets/images/HeroImage.png'); 
   background-size: cover;  
   background-position: right;  
-  height: 600px;
+  height: 620px;
   width: 100%; 
 
   .container{
-    padding-top: 80px;
+    padding-top: 120px;
     max-width: 700px;
     width: 100%;
 
