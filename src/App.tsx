@@ -1,7 +1,11 @@
+import Hero from "./components/containers/hero";
+import GlobalStyle from "./styles/Global";
+
 function App() {
   return (
     <>
-      <h1>derek</h1>
+      <GlobalStyle />
+      <Hero />
     </>
   );
 }
