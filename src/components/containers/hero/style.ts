@@ -8,15 +8,19 @@ export const StyleHero = styled.section`
   background-position: right;  
   height: 620px;
   width: 100%; 
+  
 
-  .container{
-    padding-top: 120px;
+  .hero_container{
+    padding-top: 180px;
     max-width: 700px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 
     &_content{
         height: max-content;
-        padding-top: 20px;
+        padding-top: 16px;
         max-width: 540px;
         display: flex;
         flex-direction: column;

@@ -9,14 +9,14 @@ export default function Hero() {
   return (
     <s.StyleHero>
       <Interface>
-        <div className="container">
+        <div className="hero_container">
           <Title color={Color.BrancoFundo} colorSpan={Color.BrancoFundo}>
             <span>Descubra </span>
             por que o Pesquisa Ativa está revolucionando o mundo dos
             <span> negócios!</span>
           </Title>
-          <div className="container_content">
-            <Texto color={Color.BrancoFundo} colorSpan={Color.BrancoFundo}>
+          <div className="hero_container_content">
+            <Texto color={Color.cinza} colorSpan={Color.BrancoFundo}>
               fornecer insights valiosos que auxiliem na tomada de decisões
               estratégicas, desenvolvimento de produtos e identificação de
               oportunidades de mercado.

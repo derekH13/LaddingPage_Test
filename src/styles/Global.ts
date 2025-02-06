@@ -35,15 +35,15 @@ body{
 
 // espaço das infomaçoes na tela
 export const Interface = styled.div`
-max-width: 1280px;
+max-width: 1240px;
 width: 100%;
 margin: 0 auto;
 `
 
 // titulo padrão
 export const Title = styled.h1<TitleProps>`
-font-size: 40px;
-font-weight: 300;
+font-size: ${TitleProps => TitleProps.tamanho == 'middle' ? '26px' : '36px'};
+font-weight: ${(TitleProps) => TitleProps.weight  || '300'};
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
 
 span{
@@ -55,9 +55,11 @@ span{
 
 // texto padrão
 export const Texto = styled.p<TitleProps>`
-font-size: 20px;
+font-size: 16px;
 font-weight: 300;
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
+font-family: 'Open Sans', sans-serif !important;
+letter-spacing: .5px;
 
 span{
   font-weight: 700;
