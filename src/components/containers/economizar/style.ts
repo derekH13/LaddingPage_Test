@@ -62,15 +62,15 @@ justify-content: space-between;
 
       &:after{
         content: "";
-        width: 12px;
-        height: 12px;
+        width: 15px;
+        height: 15px;
         top: 50%; 
         transform: translateY(-50%);
         border-radius: 50%;
         background-color: ${Color.verdePrimary};
         position: absolute;
         z-index: 2;
-        left: -40px; 
+        left: -39px; 
       }
 
     }

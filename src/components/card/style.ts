@@ -8,7 +8,7 @@ height: max-content;
 width: 360px;
 position: relative;
 border-radius: 20px;
-background-color: #F8F8F8 ;
+background-color:rgb(243, 243, 243) ;
 padding: 30px 20px 10px 20px;
 
 ${Title}{

@@ -11,9 +11,8 @@ export default function Hero() {
       <Interface>
         <div className="hero_container">
           <Title color={Color.BrancoFundo} colorSpan={Color.BrancoFundo}>
-            <span>Descubra </span>
-            por que o Pesquisa Ativa está revolucionando o mundo dos
-            <span> negócios!</span>
+            Descubra por que o <span>Pesquisa Ativa</span> está{" "}
+            <span>revolucionando</span> o mundo dos negócios!
           </Title>
           <div className="hero_container_content">
             <Texto color={Color.cinza} colorSpan={Color.BrancoFundo}>
