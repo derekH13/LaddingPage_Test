@@ -6,3 +6,7 @@ export type TitleProps =  {
     tamanho?: 'middle' | 'default'
     weight?: number
 }
+
+export type PropsContainer = {
+    bg: string
+}

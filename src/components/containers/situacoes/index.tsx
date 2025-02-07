@@ -29,9 +29,9 @@ export default function Situacoes() {
               aria-current="true"
               aria-label="Slide 1"
               style={{
-                backgroundColor: Color.cinza,
-                height: 20,
-                width: 20,
+                backgroundColor: Color.verdePrimary,
+                height: 15,
+                width: 15,
                 borderRadius: "50%",
               }}
             ></button>
@@ -41,9 +41,9 @@ export default function Situacoes() {
               data-bs-slide-to="1"
               aria-label="Slide 2"
               style={{
-                backgroundColor: Color.cinza,
-                height: 20,
-                width: 20,
+                backgroundColor: Color.verdePrimary,
+                height: 15,
+                width: 15,
                 borderRadius: "50%",
               }}
             ></button>
@@ -53,9 +53,9 @@ export default function Situacoes() {
               data-bs-slide-to="2"
               aria-label="Slide 3"
               style={{
-                backgroundColor: Color.cinza,
-                height: 20,
-                width: 20,
+                backgroundColor: Color.verdePrimary,
+                height: 15,
+                width: 15,
                 borderRadius: "50%",
               }}
             ></button>

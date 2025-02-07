@@ -1,3 +1,5 @@
+import Economizar from "./components/containers/economizar";
+import Faturar from "./components/containers/faturar";
 import Header from "./components/containers/header";
 import Hero from "./components/containers/hero";
 import Situacoes from "./components/containers/situacoes";
@@ -10,6 +12,8 @@ function App() {
       <Header />
       <Hero />
       <Situacoes />
+      <Faturar />
+      <Economizar />
     </>
   );
 }

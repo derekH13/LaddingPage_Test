@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Color } from "./variaveis";
-import { TitleProps } from "../interface";
+import { PropsContainer, TitleProps } from "../interface";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -66,6 +66,17 @@ span{
   color: ${(TitleProps) => TitleProps.colorSpan  || Color.BrancoFundo};
 
 }
+`
+
+export const ContainerInfo = styled.div<PropsContainer>`
+margin-top: 90px;
+display: flex;
+flex-direction: column;
+background-color: ${PropsContainer => PropsContainer.bg || 'transparent'};
+min-height: 840px;
+width: 100%;
+
+
 `
 
 
