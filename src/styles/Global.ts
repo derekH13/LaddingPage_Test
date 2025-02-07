@@ -36,15 +36,20 @@ body{
 // espaço das infomaçoes na tela
 export const Interface = styled.div`
 max-width: 1240px;
-width: 100%;
+width: 95%;
 margin: 0 auto;
 `
 
 // titulo padrão
 export const Title = styled.h1<TitleProps>`
 font-size: ${TitleProps => TitleProps.tamanho == 'middle' ? '26px' : '36px'};
+
 font-weight: ${(TitleProps) => TitleProps.weight  || '300'};
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
+
+@media(max-width: 1080px){
+  font-size: 28px;
+}
 
 span{
   font-weight: 700;

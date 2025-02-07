@@ -1,5 +1,4 @@
-import React from "react";
-
+// styles
 import * as s from "./style";
 import { Interface } from "../../../styles/Global";
 
@@ -13,6 +12,7 @@ export default function Header() {
           <a href="#">
             <img src="src/assets/images/logo.png" alt="" />
           </a>
+
           <ul>
             <li>
               <a href="#">Sobre</a>

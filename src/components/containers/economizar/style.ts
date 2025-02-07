@@ -5,13 +5,16 @@ import { Texto } from "../../../styles/Global";
 export const EconomizarStyle = styled.section`
     background-image: url('src/assets/images/economizar.png');
     background-size: cover;  
-    background-position: right;  
+    background-position: center;  
     min-height: 840px;
     height: 100%;
     width: 100%; 
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+
+  
 
     .economizar_content{
         display: flex;
@@ -30,10 +33,15 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 
+@media(max-width: 1080px){
+    margin-left: 20px;
+}
+    
+
     li{
       list-style: none;
       position: relative; 
-      height: 80px;
+      height: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;

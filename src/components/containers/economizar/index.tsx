@@ -22,12 +22,7 @@ export default function Economizar() {
               investimentos desnecessários em produtos ou serviços sem
               potencial. Ao testar ideias com o público-alvo antes de grandes
               investimentos, é possível validar conceitos e ajustar o
-              desenvolvimento, evitando falhas caras. A pesquisa também fornece
-              dados sobre a demanda real e as preferências dos consumidores,
-              permitindo focar recursos em produtos com maior chance de sucesso.
-              Além disso, com insights precisos sobre o comportamento do
-              consumidor e as melhores estratégias de marketing, os recursos
-              podem ser alocados de maneira
+              desenvolvimento, evitando falhas caras.
             </Texto>
 
             <s.topicosStyle>
@@ -60,7 +55,6 @@ export default function Economizar() {
                     riscos e tomar decisões mais seguras.
                   </span>
                 </li>
-                <li>Minimização de Riscos</li>
               </ul>
             </s.topicosStyle>
           </s.Content>

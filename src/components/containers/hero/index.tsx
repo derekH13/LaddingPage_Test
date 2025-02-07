@@ -21,7 +21,7 @@ export default function Hero() {
               oportunidades de mercado.
             </Texto>
             <ButtonHero
-              text=" Quero agendar uma consultoria gratuita!"
+              text=" Agendar uma consultoria gratuita!"
               color={Color.BrancoFundo}
               icon={
                 <svg

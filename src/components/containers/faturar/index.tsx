@@ -1,5 +1,3 @@
-import React from "react";
-
 // objetos
 import { objFAturar1, objFAturar2 } from "../../../data";
 
