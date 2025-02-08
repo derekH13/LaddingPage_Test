@@ -1,12 +1,17 @@
 // styles
 import * as s from "./style";
 import { Interface } from "../../../styles/Global";
+import { useSelector } from "react-redux";
+import { RootReducer } from "../../../redux/store";
 
 export default function Header() {
+  const visible = useSelector((state: RootReducer) => state.mostarNav.itens);
+
   return (
-    <s.styleHeader>
+    <s.styleHeader mostrar={visible}>
+      <img src="src/assets/images/HeroImage.png" alt="" />
       <Interface>
-        <s.styledContente mostrar={false}>
+        <s.styledContent mostrar={visible}>
           <a href="#">
             <img src="src/assets/images/logo.png" alt="" />
           </a>
@@ -42,7 +47,7 @@ export default function Header() {
               <a href="#">Contato</a>
             </li>
           </ul>
-        </s.styledContente>
+        </s.styledContent>
       </Interface>
     </s.styleHeader>
   );

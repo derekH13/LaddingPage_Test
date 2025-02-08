@@ -6,6 +6,7 @@ justify-content: center;
 flex-direction: row;
 gap: 40px;
 width: 100%;
+margin: 12px 0px;
 `
 
 export const situacoesStyle = styled.section`

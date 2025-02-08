@@ -1,3 +1,4 @@
+// style
 import { Interface, Texto, Title } from "../../../styles/Global";
 import { Color } from "../../../styles/variaveis";
 import * as s from "./style";
@@ -5,11 +6,27 @@ import * as s from "./style";
 // components
 import ButtonHero from "../../buttonHero";
 
+// hooks
+import { useInView } from "react-intersection-observer";
+import { useDispatch } from "react-redux";
+import { mostarNav } from "../../../redux/reducer/mostarNav";
+import { useEffect } from "react";
+
 export default function Hero() {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(mostarNav(!inView));
+  }, [inView]);
+
   return (
     <s.StyleHero>
       <Interface>
-        <div className="hero_container" id="hero_container">
+        <div ref={ref} className="hero_container" id="hero_container">
           <Title color={Color.BrancoFundo} colorSpan={Color.BrancoFundo}>
             Descubra por que o <span>Pesquisa Ativa</span> está{" "}
             <span>revolucionando</span> o mundo dos negócios!

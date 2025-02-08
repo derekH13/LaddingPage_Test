@@ -6,21 +6,36 @@ type props = {
 }
 
 
-export const styleHeader = styled.nav`
+export const styleHeader = styled.nav<props>`
 width: 100%;
 position: fixed;
-padding-top: 25px;
 z-index: 4;
-` 
 
-export const styledContente = styled.div<props>`
+& > img{
+    visibility: ${props => props.mostrar != true ? 'hidden' : 'visible'};
+    object-fit: cover;
+    wight: 100%;
+    height: 580px;
+    overflow: hidden;
+    clip-path: inset(0px 0px 510px 0px);
+    position: absolute;
+    transition: all .4s;
+}
+`
+
+export const styledContent = styled.div<props>`
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding-top: 25px;
+position: relative;
+z-index: 100;
 
 img{
-    visibility: ${props => props.hidden == true ? 'visible' : 'hidden'};
+    visibility: ${props => props.mostrar == true ? 'visible' : 'hidden'};
     height: 45px;
+    transform: translateY(-10px);
+
 }
 
 .mobille{

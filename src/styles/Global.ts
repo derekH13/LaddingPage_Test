@@ -94,16 +94,22 @@ flex-direction: column;
     z-index-2;
 
     img{
-      max-height: 600px;
-      width: 100%;
       object-fit: cover;
-    }
+      height: 100%;
 
-
-  @media(max-width: 1080px){
-    margin-top: 16px;
-    width: 100%;
-    max-height: 500;
+      @media(max-width: 1080px){
+        margin-top: 16px;
+        width: 100%;
+        max-height: 600px;
+        height: auto;
+  }
+      }
+      
+      
+      @media(max-width: 1080px){
+        margin-top: 16px;
+        width: 100%;
+        max-height: 500;
   }
 }
 

@@ -4,7 +4,7 @@ import { Color } from "../../../styles/variaveis";
 export const footerStyle = styled.footer`
 width: 100%;
 height: max-content;
-background-color: #f7f7f9;
+background-color:rgb(235, 235, 235);
 padding: 40px 20px;
 border-radius: 20px;
 margin-bottom: 40px;
