@@ -14,35 +14,37 @@ export default function Faturar() {
     <ContainerInfo bg={Color.verdePrimary}>
       <Interface>
         <StyleContainer>
-          <Title
-            color={Color.BrancoFundo}
-            colorSpan={Color.BrancoFundo}
-            tamanho="middle"
-          >
-            Como <span>faturar</span> mais com o Pesquisa Ativa?
-          </Title>
-          <div className="faturar_content">
-            {objFAturar1.map((item) => (
-              <CardFaturar
-                column={item.column}
-                img={item.img}
-                texto={item.texto}
-                title={item.title}
-              />
-            ))}
-          </div>
-          <div className="faturar_content">
-            {objFAturar2.map((item) => (
-              <CardFaturar
-                column={item.column}
-                img={item.img}
-                texto={item.texto}
-                title={item.title}
-              />
-            ))}
+          <div className="faturar_container">
+            <Title
+              color={Color.BrancoFundo}
+              colorSpan={Color.BrancoFundo}
+              tamanho="middle"
+            >
+              Como <span>faturar</span> mais com o Pesquisa Ativa?
+            </Title>
+            <div className="faturar_content">
+              {objFAturar1.map((item) => (
+                <CardFaturar
+                  column={item.column}
+                  texto={item.texto}
+                  title={item.title}
+                />
+              ))}
+
+              {objFAturar2.map((item) => (
+                <CardFaturar
+                  column={item.column}
+                  texto={item.texto}
+                  title={item.title}
+                />
+              ))}
+            </div>
           </div>
         </StyleContainer>
       </Interface>
+      <div className="imagemFundo">
+        <img src="src/assets/images/faturarBg.jpg" alt="" />
+      </div>
     </ContainerInfo>
   );
 }
