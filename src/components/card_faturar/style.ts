@@ -10,16 +10,18 @@ display: flex;
 flex-direction: ${props => props.Column == 'reverse' ? 'column-reverse' : 'column'};
 width: 100%;
 align-items: start;
+justify-content: start;
 max-width: 500px;
-min-height: 436px;
+min-height: 336px;
 
 @media(max-width: 1080px){
     min-height: auto;
+    flex-direction: column;
 }
 
 
 img{
-    height: 200px;
+    height: 170px;
     margin: 0 auto;
 
     @media(max-width: 1080px){
@@ -28,14 +30,13 @@ img{
 }
 
 .cardFaturar_content{
-    height: 100%;
     width: 100%;
 
     h3{
         font-family: "League Gothic", serif;
-        font-size: 36px;
+        font-size: 33px;
         letter-spacing: 2px;
-        padding: 08px 0px;
+        padding-bottom: 8px;
         min-height: 103px;
 
         @media(max-width: 1080px){

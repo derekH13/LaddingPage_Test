@@ -16,15 +16,15 @@ export default function Card({ icon, title, texto }: props) {
     <s.styleCard>
       {icon}
       <Title
-        color={Color.verdePrimary}
-        colorSpan={Color.verdePrimary}
+        color={Color.verdeSecundary}
+        colorSpan={Color.verdeSecundary}
         tamanho="middle"
       >
         <span>{title}</span>
       </Title>
       <Texto
         color={Color.cinzaSecundary}
-        colorSpan={Color.verdePrimary}
+        colorSpan={Color.verdeSecundary}
         tamanho="middle"
       >
         {texto}

@@ -10,3 +10,11 @@ export type TitleProps =  {
 export type PropsContainer = {
     bg: string
 }
+
+
+export interface propsFaturar  {
+        title: string,
+        texto: string,
+        img: string
+        column: 'default' | 'reverse'
+    }

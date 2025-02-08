@@ -13,7 +13,7 @@ export default function CarrosselDesktop() {
         <div className="situacoes_title">
           <Title
             color={Color.cinzaSecundary}
-            colorSpan={Color.verdePrimary}
+            colorSpan={Color.verdeSecundary}
             tamanho="middle"
             weight={500}
           >
@@ -30,7 +30,7 @@ export default function CarrosselDesktop() {
               aria-current="true"
               aria-label="Slide 1"
               style={{
-                backgroundColor: Color.verdePrimary,
+                backgroundColor: Color.verdeSecundary,
                 height: 15,
                 width: 15,
                 borderRadius: "50%",
@@ -42,7 +42,7 @@ export default function CarrosselDesktop() {
               data-bs-slide-to="1"
               aria-label="Slide 2"
               style={{
-                backgroundColor: Color.verdePrimary,
+                backgroundColor: Color.verdeSecundary,
                 height: 15,
                 width: 15,
                 borderRadius: "50%",
@@ -58,7 +58,7 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-signpost-2-fill"
                       viewBox="0 0 16 16"
                     >
@@ -74,14 +74,14 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-radar"
                       viewBox="0 0 16 16"
                     >
                       <path d="M6.634 1.135A7 7 0 0 1 15 8a.5.5 0 0 1-1 0 6 6 0 1 0-6.5 5.98v-1.005A5 5 0 1 1 13 8a.5.5 0 0 1-1 0 4 4 0 1 0-4.5 3.969v-1.011A2.999 2.999 0 1 1 11 8a.5.5 0 0 1-1 0 2 2 0 1 0-2.5 1.936v-1.07a1 1 0 1 1 1 0V15.5a.5.5 0 0 1-1 0v-.518a7 7 0 0 1-.866-13.847" />
                     </svg>
                   }
-                  title="Precisa identificar oportunidades "
+                  title="Precisa identificar oportunidades. "
                   texto="Se você deseja explorar novos nichos de mercado ou verificar o potencial de novos produtos, o Pesquisa Ativa fornece uma visão clara e objetiva sobre as tendências e necessidades do público."
                 />
                 <Card
@@ -90,7 +90,7 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-people-fill"
                       viewBox="0 0 16 16"
                     >
@@ -110,7 +110,7 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-graph-up-arrow"
                       viewBox="0 0 16 16"
                     >
@@ -129,7 +129,7 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-box-seam-fill"
                       viewBox="0 0 16 16"
                     >
@@ -139,7 +139,7 @@ export default function CarrosselDesktop() {
                       />
                     </svg>
                   }
-                  title="busca desenvolvimento de um produto eficaz"
+                  title="busca um produto eficaz"
                   texto="Antes de lançar um novo produto ou serviço, é essencial validar a aceitação do mercado. O Pesquisa Ativa permite que você teste e refine suas ideias antes de investir grandes recursos."
                 />
                 <Card
@@ -148,7 +148,7 @@ export default function CarrosselDesktop() {
                       xmlns="http://www.w3.org/2000/svg"
                       width="80"
                       height="80"
-                      fill={Color.verdePrimary}
+                      fill={Color.verdeSecundary}
                       className="bi bi-piggy-bank-fill"
                       viewBox="0 0 16 16"
                     >
@@ -172,7 +172,7 @@ export default function CarrosselDesktop() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                fill={Color.verdePrimary}
+                fill={Color.verdeSecundary}
                 className="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -195,7 +195,7 @@ export default function CarrosselDesktop() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                fill={Color.verdePrimary}
+                fill={Color.verdeSecundary}
                 className="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >

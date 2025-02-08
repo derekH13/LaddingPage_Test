@@ -12,7 +12,7 @@ export default function Economizar() {
           <s.Content>
             <Title
               color={Color.BrancoFundo}
-              colorSpan={Color.verdePrimary}
+              colorSpan={Color.verdeSecundary}
               tamanho="middle"
             >
               Como <span>economizar</span> com o Pesquisa Ativa?

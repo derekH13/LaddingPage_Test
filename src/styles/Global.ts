@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
   padding: 0;
 
-  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", serif;
   line-height: 1.5;
   font-weight: 400;
   font-synthesis: none;
@@ -48,7 +48,7 @@ font-weight: ${(TitleProps) => TitleProps.weight  || '300'};
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
 
 @media(max-width: 1080px){
-  font-size: 28px;
+  font-size: 30px;
 }
 
 span{
@@ -78,7 +78,8 @@ margin-top: 90px;
 display: flex;
 flex-direction: column;
 background-color: ${PropsContainer => PropsContainer.bg || 'transparent'};
-min-height: 840px;
+min-height: 800px;
+height: 100%;
 width: 100%;
 
 
