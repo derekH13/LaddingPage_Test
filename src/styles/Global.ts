@@ -1,6 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { Color } from "./variaveis";
-import { TitleProps } from "../interface";
+import { PropsContainer, TitleProps } from "../interface";
 
 const GlobalStyle = createGlobalStyle`
 *{
@@ -35,16 +35,21 @@ body{
 
 // espaço das infomaçoes na tela
 export const Interface = styled.div`
-max-width: 1280px;
-width: 100%;
+max-width: 1240px;
+width: 95%;
 margin: 0 auto;
 `
 
 // titulo padrão
 export const Title = styled.h1<TitleProps>`
-font-size: 40px;
-font-weight: 300;
+font-size: ${TitleProps => TitleProps.tamanho == 'middle' ? '26px' : '36px'};
+
+font-weight: ${(TitleProps) => TitleProps.weight  || '300'};
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
+
+@media(max-width: 1080px){
+  font-size: 28px;
+}
 
 span{
   font-weight: 700;
@@ -55,15 +60,28 @@ span{
 
 // texto padrão
 export const Texto = styled.p<TitleProps>`
-font-size: 20px;
+font-size: 16px;
 font-weight: 300;
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
+font-family: 'Open Sans', sans-serif !important;
+letter-spacing: .5px;
 
 span{
   font-weight: 700;
   color: ${(TitleProps) => TitleProps.colorSpan  || Color.BrancoFundo};
 
 }
+`
+
+export const ContainerInfo = styled.div<PropsContainer>`
+margin-top: 90px;
+display: flex;
+flex-direction: column;
+background-color: ${PropsContainer => PropsContainer.bg || 'transparent'};
+min-height: 840px;
+width: 100%;
+
+
 `
 
 

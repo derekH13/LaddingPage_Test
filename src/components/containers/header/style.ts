@@ -5,6 +5,7 @@ export const styleHeader = styled.nav`
 width: 100%;
 position: fixed;
 padding-top: 25px;
+z-index: 4;
 ` 
 
 export const styledContente = styled.div`
@@ -18,9 +19,13 @@ height: 45px;
 
 
 ul{
-    display: flex;
-    align-items: center;
-    gap: 16px;
+display: flex;
+align-items: center;
+gap: 16px;
+
+@media(max-width: 1080px){
+display: none;
+}
 
     li{
         list-style: none;
