@@ -9,7 +9,7 @@ export default function Hero() {
   return (
     <s.StyleHero>
       <Interface>
-        <div className="hero_container">
+        <div className="hero_container" id="hero_container">
           <Title color={Color.BrancoFundo} colorSpan={Color.BrancoFundo}>
             Descubra por que o <span>Pesquisa Ativa</span> está{" "}
             <span>revolucionando</span> o mundo dos negócios!

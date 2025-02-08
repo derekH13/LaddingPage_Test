@@ -5,7 +5,7 @@ import { Texto, Title } from "../../styles/Global";
 export const styleCard = styled.div`
 min-height: 422px;
 height: max-content;
-width: 360px;
+width: 333px;
 position: relative;
 border-radius: 20px;
 background-color:rgb(243, 243, 243) ;

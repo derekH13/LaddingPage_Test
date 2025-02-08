@@ -13,9 +13,6 @@ export const EconomizarStyle = styled.section`
     flex-direction: column;
     justify-content: center;
 
-
-  
-
     .economizar_content{
         display: flex;
         justify-content: end;
@@ -28,7 +25,7 @@ display: flex;
 padding-top: 20px;
 
 ul{
-border-left: solid 2px  ${Color.verdePrimary};
+border-left: solid 2px  ${Color.verdeSecundary};
 display: flex;
 flex-direction: column;
 justify-content: space-between;
@@ -46,12 +43,13 @@ justify-content: space-between;
       flex-direction: column;
       justify-content: center;
       align-items: start;
-      color: ${Color.verdePrimary};
+      color: ${Color.verdeSecundary};
       font-weight: 700;
       font-size: 18px;
 
       span{
-      color: ${Color.cinza}
+      color: ${Color.cinza};
+      font-size: 16px;
       }
 
       &:before {
@@ -60,7 +58,7 @@ justify-content: space-between;
         height: 44px;
         border-radius: 50%;
         background-color: black;
-        border: solid 2px ${Color.verdePrimary};
+        border: solid 2px ${Color.verdeSecundary};
         position: absolute;
         left: -54px; 
         top: 50%; 
@@ -75,7 +73,7 @@ justify-content: space-between;
         top: 50%; 
         transform: translateY(-50%);
         border-radius: 50%;
-        background-color: ${Color.verdePrimary};
+        background-color: ${Color.verdeSecundary};
         position: absolute;
         z-index: 2;
         left: -39px; 

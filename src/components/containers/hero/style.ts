@@ -22,7 +22,7 @@ export const StyleHero = styled.section`
     
 
   .hero_container{
-    padding-top: 180px;
+    padding-top: 140px;
     max-width: 700px;
     width: 100%;
     display: flex;

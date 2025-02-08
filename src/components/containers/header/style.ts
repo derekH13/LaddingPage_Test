@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { Color } from "../../../styles/variaveis";
 
+type props = {
+    mostrar: boolean
+}
+
+
 export const styleHeader = styled.nav`
 width: 100%;
 position: fixed;
@@ -8,13 +13,20 @@ padding-top: 25px;
 z-index: 4;
 ` 
 
-export const styledContente = styled.div`
+export const styledContente = styled.div<props>`
 display: flex;
 justify-content: space-between;
 align-items: center;
 
 img{
-height: 45px;
+    visibility: ${props => props.hidden == true ? 'visible' : 'hidden'};
+    height: 45px;
+}
+
+.mobille{
+@media(min-width: 784px){
+    display: none;
+}
 }
 
 
@@ -22,6 +34,7 @@ ul{
 display: flex;
 align-items: center;
 gap: 16px;
+visibility: visible;
 
 @media(max-width: 1080px){
 display: none;
