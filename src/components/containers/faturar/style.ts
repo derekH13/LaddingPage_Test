@@ -2,28 +2,40 @@ import styled from "styled-components";
 import { Title } from "../../../styles/Global";
 
 export const StyleContainer = styled.div`
-
 display: flex;
-flex-direction: column;
 width: 100%;
-padding: 5.6vw 0px;
+justify-content: end;
+height: 100%;
+align-items: center;
 
 @media(max-width: 1080px){
     justify-content: center;
     align-items: center;
 }
 
-${Title}{
-padding-bottom: 70px;
-margin: 0 auto;
+.faturar_container{
+   max-width: 560px;
+   margin-right: 17%;
+   margin-left: 8px;
+
+    @media(max-width: 1080px){
+        max-width: 100%;
+        margin-right: auto;
+    }
 }
+
+${Title}{
+padding-bottom: 30px;
+}
+
+
 
 .faturar_content{
     min-height: 250px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    gap: 80px;
+    gap: 10px;
 
     @media(max-width: 1080px){
         flex-direction: column;

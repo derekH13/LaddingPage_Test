@@ -5,6 +5,7 @@ import Header from "./components/containers/header";
 import Hero from "./components/containers/hero";
 import Razoes from "./components/containers/razoes";
 import Situacoes from "./components/containers/situacoes";
+import Solucoes from "./components/containers/solucoes";
 import GlobalStyle from "./styles/Global";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Faturar />
       <Economizar />
       <Razoes />
+      <Solucoes />
       <Footer />
     </>
   );

@@ -23,6 +23,7 @@ export default function Hero() {
             <ButtonHero
               text=" Agendar uma consultoria gratuita!"
               color={Color.BrancoFundo}
+              borderColor={Color.BrancoFundo}
               icon={
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

@@ -76,12 +76,36 @@ span{
 export const ContainerInfo = styled.div<PropsContainer>`
 margin-top: 90px;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 background-color: ${PropsContainer => PropsContainer.bg || 'transparent'};
 min-height: 800px;
 height: 100%;
 width: 100%;
 
+@media(max-width: 1080px){
+flex-direction: column;
+}
+
+.imagemFundo{
+    background-size: cover;  
+    background-position: center;  
+    width: 50%;
+    height: 100%;
+    z-index-2;
+
+    img{
+      max-height: 600px;
+      width: 100%;
+      object-fit: cover;
+    }
+
+
+  @media(max-width: 1080px){
+    margin-top: 16px;
+    width: 100%;
+    max-height: 500;
+  }
+}
 
 `
 
