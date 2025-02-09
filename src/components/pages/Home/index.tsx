@@ -1,5 +1,4 @@
 // comonents
-import { useState } from "react";
 import GlobalStyle from "../../../styles/Global";
 import Contato from "../../containers/contato";
 import Economizar from "../../containers/economizar";
@@ -12,18 +11,10 @@ import Situacoes from "../../containers/situacoes";
 import Solucoes from "../../containers/solucoes";
 
 export default function Home() {
-  const [mostarNav, setMostarNav] = useState(false);
-
-  const toggleNav = () => {
-    setMostarNav(!mostarNav);
-  };
-
-  console.log(toggleNav);
-
   return (
     <section>
       <GlobalStyle />
-      <Header visibleBg={mostarNav} />
+      <Header />
       <Hero />
       <Situacoes />
       <Faturar />

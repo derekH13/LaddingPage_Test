@@ -17,7 +17,7 @@ export default function Header() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           src="src/assets/images/HeroImage.png"
-          alt=""
+          alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo. A bússola representa a orientação e o direcionamento, com a cor azul enfatizando o compromisso da empresa em guiar seus clientes com confiança e precisão. O design sugere que a empresa tem o foco em ajudar a direcionar para o caminho certo."
         />
       )}
       <Interface>
@@ -50,19 +50,19 @@ export default function Header() {
           </div>
           <ul>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#hero">Sobre</a>
             </li>
             |
             <li>
-              <a href="#">Benefícios</a>
+              <a href="#faturar">Benefícios</a>
             </li>
             |
             <li>
-              <a href="#">Soluções</a>
+              <a href="#solucoes">Soluções</a>
             </li>
             |
             <li>
-              <a href="#">Contato</a>
+              <a href="#contato">Contato</a>
             </li>
           </ul>
         </s.styledContent>

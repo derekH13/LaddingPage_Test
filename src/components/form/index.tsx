@@ -14,7 +14,10 @@ export default function Form() {
   return (
     <s.StyleForm action="">
       <div className="form_logo">
-        <img src="src/assets/images/logo.png" alt="" />
+        <img
+          src="src/assets/images/logo.png"
+          alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo. A bússola representa a orientação e o direcionamento, com a cor azul enfatizando o compromisso da empresa em guiar seus clientes com confiança e precisão. O design sugere que a empresa tem o foco em ajudar a direcionar para o caminho certo."
+        />
         Pesquisa Ativa
       </div>
       <Title

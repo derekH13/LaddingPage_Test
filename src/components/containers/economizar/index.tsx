@@ -6,7 +6,7 @@ import { Color } from "../../../styles/variaveis";
 
 export default function Economizar() {
   return (
-    <s.EconomizarStyle>
+    <s.EconomizarStyle aria-label="Imagem de uma reunião de empresários em uma sala de conferências. Há várias pessoas ao redor de uma mesa de reunião, discutindo ou analisando documentos. Ao fundo, uma janela de vidro exibe uma vista para o exterior.">
       <Interface>
         <div className="economizar_content">
           <s.Content>

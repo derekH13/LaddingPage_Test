@@ -13,6 +13,7 @@ export const EconomizarStyle = styled.section`
     flex-direction: column;
     justify-content: center;
     padding: 80px 0px;
+    
 
     .economizar_content{
         display: flex;

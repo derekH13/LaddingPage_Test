@@ -61,9 +61,13 @@ display: none;
             color: ${Color.BrancoFundo};
             font-size: 17px;
             font-weight: 500;
+            border-bottom: solid 2px transparent;
+            transition: all .4s ease;
+            padding-bottom: 4px;
 
             &:hover{
                 color: ${Color.verdeSecundary};
+                border-color: ${Color.verdeSecundary};
             }
         }
     }

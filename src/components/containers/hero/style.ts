@@ -8,8 +8,11 @@ export const StyleHero = styled.section`
   height: 580px;
   width: 100%; 
 
+  &[aria-label] {
+  font-size: 18px;
+  }
+
   @media(max-width: 1080px){
-      
       background-position: right; 
       
       }

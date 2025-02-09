@@ -1,31 +1,49 @@
-import React from "react";
+// style
 import { Interface, Title } from "../../../styles/Global";
 import { Color } from "../../../styles/variaveis";
 import ButtonHero from "../../buttonHero";
-
 import * as s from "./style";
-import CarrosselSolucoes from "../../carrosselSolucoes";
+
+// obj
+import { objSolucoes } from "../../../data";
+
+//  components
+import CarrosselDesktop from "../../carrosselDesktop";
+import CarosselMobille from "../../carrosselMobille";
 
 export default function Solucoes() {
   return (
-    <s.StyleSolucoes>
+    <s.StyleSolucoes id="solucoes">
       <Interface>
         <div className="titulo">
-          <Title color={Color.black} colorSpan={Color.verdeSecundary}>
+          <Title color={Color.BrancoFundo} colorSpan={Color.verdeSecundary}>
             Soluções
           </Title>
           <ButtonHero
             key={11}
-            color={Color.verdeSecundary}
+            color={Color.BrancoFundo}
             text="Nossos Prodissionais"
             icon=""
             width="max-content"
             radiusButton={10}
-            borderColor={Color.verdeSecundary}
+            borderColor={Color.BrancoFundo}
           />
         </div>
-        <div>
-          <CarrosselSolucoes />
+
+        <div className="desktop">
+          <CarrosselDesktop
+            corIndicador={Color.verdeSecundary}
+            id="solucoesCarrossel"
+            obj={objSolucoes}
+          />
+        </div>
+        <div className="mobille">
+          <CarosselMobille
+            corIndicador={Color.BrancoFundo}
+            isSolucoes={true}
+            obj={objSolucoes}
+            id="solucoesCarrosselM"
+          />
         </div>
       </Interface>
     </s.StyleSolucoes>

@@ -6,6 +6,7 @@ width: 100%;
 height: max-content;
 background-color: ${Color.verdeSecundary};
 padding: 40px 20px;
+margin-top: 80px;
 
 
 .termos{
