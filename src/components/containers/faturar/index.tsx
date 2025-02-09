@@ -11,7 +11,7 @@ import CardFaturar from "../../card_faturar";
 
 export default function Faturar() {
   return (
-    <ContainerInfo bg={Color.verdePrimary}>
+    <ContainerInfo bg={Color.verdePrimary} id="faturar">
       <Interface>
         <StyleContainer>
           <div className="faturar_container">
@@ -43,7 +43,10 @@ export default function Faturar() {
         </StyleContainer>
       </Interface>
       <div className="imagemFundo">
-        <img src="src/assets/images/faturarBg.jpg" alt="" />
+        <img
+          src="src/assets/images/faturarBg.jpg"
+          alt="Imagem de uma reunião de empresários em uma sala de conferências. Há várias pessoas ao redor de uma mesa de reunião, discutindo ou analisando documentos. Ao fundo, uma janela de vidro exibe uma vista para o exterior."
+        />
       </div>
     </ContainerInfo>
   );

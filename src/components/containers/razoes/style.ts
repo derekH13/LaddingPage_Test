@@ -10,9 +10,12 @@ export const StyleRazoes = styled.section`
     height: max-content;
     justify-content: center;
     align-items: center;
+    padding: 80px 0px ;
+    
 
 @media(max-width: 890px){
     grid-template-columns: 1fr;
+    gap:24px;
 }
 
 

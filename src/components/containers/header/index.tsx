@@ -1,14 +1,37 @@
 // styles
 import * as s from "./style";
 import { Interface } from "../../../styles/Global";
+import { useSelector } from "react-redux";
+import { RootReducer } from "../../../redux/store";
+
+import { motion } from "framer-motion";
 
 export default function Header() {
+  const visible = useSelector((state: RootReducer) => state.mostarNav.itens);
+
   return (
     <s.styleHeader>
+      {visible && (
+        <motion.img
+          initial={{ opacity: 0, y: -150 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          src="src/assets/images/HeroImage.png"
+          alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo. A bússola representa a orientação e o direcionamento, com a cor azul enfatizando o compromisso da empresa em guiar seus clientes com confiança e precisão. O design sugere que a empresa tem o foco em ajudar a direcionar para o caminho certo."
+        />
+      )}
       <Interface>
-        <s.styledContente mostrar={false}>
+        <s.styledContent mostrar={visible}>
           <a href="#">
-            <img src="src/assets/images/logo.png" alt="" />
+            {visible && (
+              <motion.img
+                initial={{ opacity: 0, scale: 0, y: -10, rotate: 100 }}
+                animate={{ opacity: 1, scale: 1, y: -10, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                src="src/assets/images/logo.png"
+                alt=""
+              />
+            )}
           </a>
           <div className="mobille">
             <svg
@@ -27,22 +50,22 @@ export default function Header() {
           </div>
           <ul>
             <li>
-              <a href="#">Sobre</a>
+              <a href="#hero">Sobre</a>
             </li>
             |
             <li>
-              <a href="#">Benefícios</a>
+              <a href="#faturar">Benefícios</a>
             </li>
             |
             <li>
-              <a href="#">Soluções</a>
+              <a href="#solucoes">Soluções</a>
             </li>
             |
             <li>
-              <a href="#">Contato</a>
+              <a href="#contato">Contato</a>
             </li>
           </ul>
-        </s.styledContente>
+        </s.styledContent>
       </Interface>
     </s.styleHeader>
   );

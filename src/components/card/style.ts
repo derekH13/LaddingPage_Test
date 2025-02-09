@@ -18,16 +18,28 @@ border-radius: 10px;
 box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.09);
 padding: 30px 20px 10px 20px;
 overflow: hidden;
+background-color: ${Color.BrancoFundo};
+
+@media(max-width: 1080px){
+margin: 0 auto;
+}
+
+.card_button{
+position: absolute;
+flex: 1;
+bottom: 20px;
+width: 88%;
+}
 
 ${Title}{
-margin-top: 8px;
-min-height: 74px;
-max-width: ${props => (props.textButton && props.textButton.length > 0) ? '88%' : 'auto'  };
+    margin-top: 8px;
+    min-height: 74px;
+    max-width: ${props => (props.textButton && props.textButton.length > 0) ? '88%' : 'auto'  };
 }
 
 ${Texto}{
     font-weight: 400;
-    min-height: ${props => (props.textButton && props.textButton.length > 0) ? '192px' : '144px'  };
+    height: 100%;
 }
 
 .circulo{

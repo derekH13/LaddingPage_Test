@@ -4,8 +4,8 @@ import * as s from "./style";
 
 export default function Footer() {
   return (
-    <Interface>
-      <s.footerStyle>
+    <s.footerStyle>
+      <Interface>
         <div className="footer_content">
           <div className="footer_content_contato">
             <div className="footer_content_contato_item">
@@ -90,7 +90,7 @@ export default function Footer() {
             and Terms of Service apply.
           </p>
         </div>
-      </s.footerStyle>
-    </Interface>
+      </Interface>
+    </s.footerStyle>
   );
 }
