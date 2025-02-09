@@ -1,10 +1,12 @@
 // styles
 import { Texto, Title } from "../../styles/Global";
 import { Color } from "../../styles/variaveis";
+import ButtonHero from "../buttonHero";
 
 // components
 import InputLadding from "../Input";
 import InputCheckbox from "../inputCheckbox";
+import TextArea from "../textArea";
 
 import * as s from "./style";
 
@@ -15,8 +17,13 @@ export default function Form() {
         <img src="src/assets/images/logo.png" alt="" />
         Pesquisa Ativa
       </div>
-      <Title color={Color.black} colorSpan={Color.black}>
-        Contate-nos
+      <Title
+        color={Color.cinzaSecundary}
+        colorSpan={Color.verdeSecundary}
+        tamanho="middle"
+        weight={400}
+      >
+        <span>Contate-nos</span>
       </Title>
 
       <InputLadding
@@ -29,13 +36,19 @@ export default function Form() {
         id="e-mail"
         text="e-mail"
         type="email"
-        placeholder="E-mail"
+        placeholder="e-mail"
       />
       <InputLadding
         id="telefone"
         text="telefone"
         type="tel"
-        placeholder="Telefone"
+        placeholder="telefone"
+      />
+
+      <TextArea
+        placeholder="ex: (11/03...)"
+        id="consultoria"
+        text="Acrescente o dia que gostaria de marcar essa consultoria"
       />
 
       <div className="checkbox">
@@ -44,6 +57,13 @@ export default function Form() {
           Receber novidades
         </Texto>
       </div>
+
+      <ButtonHero
+        bgColor={Color.verdeSecundary}
+        color={Color.BrancoFundo}
+        text="Marcar Consulta"
+        radiusButton={10}
+      />
     </s.StyleForm>
   );
 }

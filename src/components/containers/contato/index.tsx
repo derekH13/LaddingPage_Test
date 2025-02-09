@@ -1,4 +1,3 @@
-import React from "react";
 import Form from "../../form";
 
 import * as s from "./style";
@@ -8,7 +7,7 @@ export default function Contato() {
   return (
     <Interface>
       <s.StyleContato>
-        <div>sssss</div>
+        <img src="src/assets/images/mapa.jpg" alt="" />
         <Form />
       </s.StyleContato>
     </Interface>

@@ -4,10 +4,9 @@ import { Color } from "../../../styles/variaveis";
 export const footerStyle = styled.footer`
 width: 100%;
 height: max-content;
-background-color:rgb(235, 235, 235);
+background-color: ${Color.verdeSecundary};
 padding: 40px 20px;
-border-radius: 20px;
-margin-bottom: 40px;
+
 
 .termos{
 margin-top: 16px;
@@ -15,8 +14,8 @@ margin-top: 16px;
 p{
     font-size: 13px;
     margin: 0;
-    font-weight: 400;
-    color: ${Color.cinzaSecundary}
+    font-weight: 500;
+    color: ${Color.black}
 }
 }
 
@@ -61,7 +60,7 @@ p{
 
     p{
         font-size: 14px;
-        font-weight: 400;
+        font-weight: 500;
         margin-bottom: 0px;
     }
 

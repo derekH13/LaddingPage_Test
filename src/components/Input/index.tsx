@@ -1,9 +1,9 @@
 import * as s from "./style";
 
-type props = {
+export type propsInput = {
   id: string;
   text: string;
-  type:
+  type?:
     | "button"
     | "email"
     | "checkbox"
@@ -15,9 +15,9 @@ type props = {
   icon?: React.ReactNode;
 };
 
-function InputLadding({ id, text, type, placeholder, icon }: props) {
+function InputLadding({ id, text, type, placeholder, icon }: propsInput) {
   return (
-    <s.inputStyle>
+    <s.InputStyle>
       <label className="desktop" htmlFor={id}>
         {text}
       </label>
@@ -27,7 +27,7 @@ function InputLadding({ id, text, type, placeholder, icon }: props) {
       </div>
 
       {icon}
-    </s.inputStyle>
+    </s.InputStyle>
   );
 }
 

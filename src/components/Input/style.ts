@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Color } from "../../styles/variaveis";
 
-export const inputStyle = styled.div`
+export const InputStyle = styled.div`
     display: flex;
     flex-direction: column;
 
@@ -17,13 +17,24 @@ label{
 .container-input{
     position: relative;
 
-    input{
+    input, textarea{
         background-color: #eeeded;
         border: none;
         margin-bottom: .8rem;
         padding: 12px .7rem;
         width: 100%;
         border-radius: 8px;
+    }
+
+    textarea{
+    min-height: 100px;
+
+    }
+
+      input:focus, textarea:focus {
+        outline: none; 
+        border-color:${Color.verdeSecundary}; 
+        box-shadow: 0 0 5px ${Color.verdeSecundary};
     }
 }
 

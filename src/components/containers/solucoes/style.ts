@@ -4,6 +4,7 @@ export const StyleSolucoes = styled.section`
 width: 100%;
 height: max-content; 
 margin-bottom: 60px;
+padding: 80px 0px;
 
 .titulo{
     width: 100%;

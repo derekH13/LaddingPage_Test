@@ -6,13 +6,13 @@ type props = {
 }
 
 
-export const styleHeader = styled.nav<props>`
+export const styleHeader = styled.nav`
 width: 100%;
 position: fixed;
 z-index: 4;
 
 & > img{
-    visibility: ${props => props.mostrar != true ? 'hidden' : 'visible'};
+
     object-fit: cover;
     wight: 100%;
     height: 580px;
@@ -32,9 +32,8 @@ position: relative;
 z-index: 100;
 
 img{
-    visibility: ${props => props.mostrar == true ? 'visible' : 'hidden'};
     height: 45px;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 
 }
 

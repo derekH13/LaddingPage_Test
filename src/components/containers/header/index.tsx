@@ -4,16 +4,34 @@ import { Interface } from "../../../styles/Global";
 import { useSelector } from "react-redux";
 import { RootReducer } from "../../../redux/store";
 
+import { motion } from "framer-motion";
+
 export default function Header() {
   const visible = useSelector((state: RootReducer) => state.mostarNav.itens);
 
   return (
-    <s.styleHeader mostrar={visible}>
-      <img src="src/assets/images/HeroImage.png" alt="" />
+    <s.styleHeader>
+      {visible && (
+        <motion.img
+          initial={{ opacity: 0, y: -150 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          src="src/assets/images/HeroImage.png"
+          alt=""
+        />
+      )}
       <Interface>
         <s.styledContent mostrar={visible}>
           <a href="#">
-            <img src="src/assets/images/logo.png" alt="" />
+            {visible && (
+              <motion.img
+                initial={{ opacity: 0, scale: 0, y: -10, rotate: 100 }}
+                animate={{ opacity: 1, scale: 1, y: -10, rotate: 0 }}
+                transition={{ duration: 0.5, delay: 1 }}
+                src="src/assets/images/logo.png"
+                alt=""
+              />
+            )}
           </a>
           <div className="mobille">
             <svg

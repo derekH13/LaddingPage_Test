@@ -7,6 +7,7 @@ width: 100%;
 justify-content: end;
 height: 100%;
 align-items: center;
+padding: 80px 0px 0px 0px;
 
 @media(max-width: 1080px){
     justify-content: center;
