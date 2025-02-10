@@ -19,10 +19,13 @@ margin: 12px 0px;
 `
 
 export const situacoesStyle = styled.section`
-padding-top: 40px;
 min-height: 580px;
 width: 100%;
 
+@media(max-width: 1080px){
+min-height: max-content;
+padding-bottom: 20px;
+}
 
 `
 
@@ -41,7 +44,7 @@ display: flex;
 .situacoes_title{
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    margin: 40px 0px 20px 0px;
 }
 
 

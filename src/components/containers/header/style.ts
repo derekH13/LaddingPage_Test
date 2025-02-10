@@ -17,7 +17,7 @@ z-index: 4;
     wight: 100%;
     height: 580px;
     overflow: hidden;
-    clip-path: inset(0px 0px 510px 0px);
+    clip-path: inset(0px 0px 500px 0px);
     position: absolute;
     transition: all .4s;
 }
@@ -29,18 +29,25 @@ justify-content: space-between;
 align-items: center;
 padding-top: 25px;
 position: relative;
-z-index: 100;
+z-index: 120;
 
 img{
     height: 45px;
-    transform: translateY(-20px);
+
 
 }
 
 .mobille{
-@media(min-width: 784px){
-    display: none;
-}
+    border: none;
+    background-color: transparent;;
+
+
+    @media(min-width: 784px){
+        display: none;
+    }
+
+
+
 }
 
 

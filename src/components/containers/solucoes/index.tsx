@@ -32,7 +32,7 @@ export default function Solucoes() {
 
         <div className="desktop">
           <CarrosselDesktop
-            corIndicador={Color.verdeSecundary}
+            corIndicador={Color.BrancoFundo}
             id="solucoesCarrossel"
             obj={objSolucoes}
           />

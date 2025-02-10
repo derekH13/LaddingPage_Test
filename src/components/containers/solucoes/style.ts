@@ -15,8 +15,20 @@ clip-path: polygon( 0% 20%, 100% 0%, 100% 80%,  0% 100% );
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
-    margin-top: 140px;
+    
+    margin: 140px 0px 15px 0px ;
+
+
+
+    @media(max-width: 1080px){
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    @media(max-width: 376px){
+    flex-direction: column;
+    gap: 10px;
+    }
 }
 
 

@@ -29,17 +29,19 @@ ${Title}{
 padding-bottom: 30px;
 }
 
-
-
 .faturar_content{
     min-height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-
+    
     @media(max-width: 1080px){
+        gap: 10px;
         flex-direction: column;
+    }
+    @media(max-width: 376px){
+        min-height: 280px;
     }
 }
 `

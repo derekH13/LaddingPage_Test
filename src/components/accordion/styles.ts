@@ -9,6 +9,7 @@ export const StyleAccordion = styled.div<propsAccordion>`
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  overflow: hidden;
 
   &:hover{
     .title{
@@ -45,12 +46,17 @@ export const StyleAccordion = styled.div<propsAccordion>`
     .item {
       border: none;
       background-color: ${Color.verdeSecundary};
-      height: 50px;
-      width: 70px;
+      height: 53px;
+      max-width: 70px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: all 0.2s ease; 
+
+      @media(max-width: 640px){
+        max-width: 50px;
+      }
 
  
       &:hover {

@@ -35,7 +35,7 @@ export const StyleHero = styled.section`
     @media(max-width: 1080px){
           height: 100%;
           text-align: center;
-          padding-top: 130px;
+          padding-top: 110px;
           margin: 0 auto;
     }
     

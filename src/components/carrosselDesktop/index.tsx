@@ -1,5 +1,4 @@
 //  style
-import { Color } from "../../styles/variaveis";
 import { Interface } from "../../styles/Global";
 
 // components
@@ -97,7 +96,7 @@ export default function CarrosselDesktop({
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                fill={Color.verdeSecundary}
+                fill={corIndicador}
                 className="bi bi-chevron-left"
                 viewBox="0 0 16 16"
               >
@@ -120,7 +119,7 @@ export default function CarrosselDesktop({
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
                 height="40"
-                fill={Color.verdeSecundary}
+                fill={corIndicador}
                 className="bi bi-chevron-right"
                 viewBox="0 0 16 16"
               >

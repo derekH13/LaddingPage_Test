@@ -48,7 +48,7 @@ font-weight: ${(TitleProps) => TitleProps.weight  || '300'};
 color: ${(TitleProps) => TitleProps.color  || Color.BrancoFundo};
 
 @media(max-width: 1080px){
-  font-size: 30px;
+  font-size: ${TitleProps => TitleProps.tamanho != 'middle' ? '30px' : '26px'};
 }
 
 span{

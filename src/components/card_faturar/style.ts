@@ -28,7 +28,7 @@ justify-content: start;
 
 
         @media(max-width: 1080px){
-            font-size: 20px;
+            font-size: 18px;
 
         }
     }
