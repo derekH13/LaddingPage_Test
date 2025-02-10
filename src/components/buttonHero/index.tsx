@@ -9,6 +9,7 @@ export interface PropsButton {
   text?: string;
   width?: string;
   radiusButton?: number;
+  classAnimation?: "heroBtn" | "solucoesBtn" | "cardBtn";
 }
 
 export default function ButtonHero({
@@ -19,6 +20,7 @@ export default function ButtonHero({
   radiusButton,
   borderColor,
   width,
+  classAnimation,
 }: PropsButton) {
   return (
     <s.StyleButtonHero
@@ -27,6 +29,7 @@ export default function ButtonHero({
       radiusButton={radiusButton}
       borderColor={borderColor}
       width={width}
+      className={classAnimation}
     >
       {icon} {text}
     </s.StyleButtonHero>

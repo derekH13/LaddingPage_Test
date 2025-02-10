@@ -42,6 +42,7 @@ export default function Hero() {
             </Texto>
             <a href="#contato">
               <ButtonHero
+                classAnimation="heroBtn"
                 text=" Agendar uma consultoria gratuita!"
                 color={Color.BrancoFundo}
                 borderColor={Color.BrancoFundo}

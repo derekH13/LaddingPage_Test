@@ -20,6 +20,7 @@ export default function Solucoes() {
             Soluções
           </Title>
           <ButtonHero
+            classAnimation="solucoesBtn"
             key={11}
             color={Color.BrancoFundo}
             text="Nossos Prodissionais"

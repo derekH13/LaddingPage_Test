@@ -1,3 +1,4 @@
+import { Field } from "formik";
 import * as s from "./style";
 
 export type propsInput = {
@@ -15,7 +16,7 @@ export type propsInput = {
   icon?: React.ReactNode;
 };
 
-function InputLadding({ id, text, type, placeholder, icon }: propsInput) {
+function InputLadding({ id, text, type, icon }: propsInput) {
   return (
     <s.InputStyle>
       <label className="desktop" htmlFor={id}>
@@ -23,7 +24,7 @@ function InputLadding({ id, text, type, placeholder, icon }: propsInput) {
       </label>
 
       <div className="container-input">
-        <input required type={type} id={id} placeholder={placeholder} />
+        <Field type={type} id={id} name={id} />
       </div>
 
       {icon}

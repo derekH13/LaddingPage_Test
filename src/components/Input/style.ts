@@ -14,6 +14,11 @@ label{
     
 }
 
+.textarea{
+    height: 100px;
+    
+}
+
 .container-input{
     position: relative;
 
@@ -26,10 +31,7 @@ label{
         border-radius: 8px;
     }
 
-    textarea{
-    min-height: 100px;
 
-    }
 
       input:focus, textarea:focus {
         outline: none; 

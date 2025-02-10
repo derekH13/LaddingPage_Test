@@ -51,6 +51,7 @@ export default function Card({
       <div className="card_button">
         {textButton && textButton.length > 1 && (
           <ButtonHero
+            classAnimation="cardBtn"
             color={colorButton}
             text={textButton}
             bgColor={bgButton}
