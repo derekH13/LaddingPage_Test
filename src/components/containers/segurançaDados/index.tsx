@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Accordion from "../../accordion";
 import { Interface, Title } from "../../../styles/Global";
 import { Color } from "../../../styles/variaveis";

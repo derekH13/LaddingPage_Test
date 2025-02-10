@@ -1,5 +1,4 @@
-import React from "react";
-
+// style
 import * as s from "./style";
 import { Interface, Texto, Title } from "../../../styles/Global";
 import { Color } from "../../../styles/variaveis";
