@@ -44,7 +44,7 @@ export default function Faturar() {
       </Interface>
       <div className="imagemFundo">
         <img
-          src="src/assets/images/faturarBg.jpg"
+          src="https://i.im.ge/2025/02/10/H01YSJ.faturar.jpeg"
           alt="Imagem de uma reunião de empresários em uma sala de conferências. Há várias pessoas ao redor de uma mesa de reunião, discutindo ou analisando documentos. Ao fundo, uma janela de vidro exibe uma vista para o exterior."
         />
       </div>

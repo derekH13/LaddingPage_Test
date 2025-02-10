@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 
+
 export const StyleHero = styled.section`
-  background-image: url('src/assets/images/HeroImage.png'); 
+  background-image: url('https://i.im.ge/2025/02/10/H01cfS.HeroImage.png'); 
   background-size: cover;  
   background-position: right;  
   height: 580px;
@@ -19,7 +20,7 @@ export const StyleHero = styled.section`
       
   @media(max-width: 600px){
       height: 100vh;
-      background-image: url('src/assets/images/heroMobille.png'); 
+      background-image: url('https://i.im.ge/2025/02/10/H018rz.heroMobille.png'); 
   }
     
     

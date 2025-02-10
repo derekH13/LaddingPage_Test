@@ -3,7 +3,7 @@ import { Color } from "../../../styles/variaveis";
 import { Texto } from "../../../styles/Global";
 
 export const EconomizarStyle = styled.section`
-    background-image: url('src/assets/images/economizar.png');
+    background-image: url('https://i.im.ge/2025/02/10/H01B8C.economizar.png');
     background-size: cover;  
     background-position: center;  
     min-height: 840px;

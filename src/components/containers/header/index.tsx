@@ -25,7 +25,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -150 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            src="src/assets/images/HeroImage.png"
+            src="https://i.im.ge/2025/02/10/H01cfS.HeroImage.png"
             alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo. A bússola representa a orientação e o direcionamento, com a cor azul enfatizando o compromisso da empresa em guiar seus clientes com confiança e precisão. O design sugere que a empresa tem o foco em ajudar a direcionar para o caminho certo."
           />
         )}
@@ -37,7 +37,7 @@ export default function Header() {
                   initial={{ opacity: 0, scale: 0, y: -10, rotate: 100 }}
                   animate={{ opacity: 1, scale: 1, y: -10, rotate: 0 }}
                   transition={{ duration: 0.5, delay: 1 }}
-                  src="src/assets/images/logo.png"
+                  src="https://i.im.ge/2025/02/10/H01R56.logo.png"
                   alt=""
                 />
               )}

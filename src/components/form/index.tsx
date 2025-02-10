@@ -36,7 +36,7 @@ export default function Form() {
         <s.StyleContainer>
           <div className="form_logo">
             <img
-              src="src/assets/images/logo.png"
+              src="https://i.im.ge/2025/02/10/H01R56.logo.png"
               alt="Imagem de uma bússola com a agulha apontando para o norte, destacando a cor azul no centro do logo."
             />
             Pesquisa Ativa

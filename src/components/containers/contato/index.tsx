@@ -8,7 +8,7 @@ export default function Contato() {
     <Interface id="contato">
       <s.StyleContato>
         <img
-          src="src/assets/images/mapa.jpg"
+          src="https://i.im.ge/2025/02/10/H01W8F.mapa.jpeg"
           alt="Imagem de uma lupa posicionada sobre um mapa, com a lente focalizando uma pequena casa no mapa. A lupa amplia a área ao redor da casa, destacando-a em meio ao restante do mapa. "
         />
         <Form />
