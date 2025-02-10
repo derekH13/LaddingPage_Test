@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 export const StyleHero = styled.section`
-  background-image: url('src/assets/images/HeroImage.png'); 
+  background-image: url('../../../assets/images/HeroImage.png'); 
   background-size: cover;  
   background-position: right;  
   height: 580px;
